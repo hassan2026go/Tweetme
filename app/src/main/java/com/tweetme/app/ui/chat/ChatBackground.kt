@@ -4,7 +4,6 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
-import androidx.compose.foundation.layout.matchParentSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -21,7 +20,6 @@ import com.tweetme.app.ui.theme.chatBackgrounds
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-/** خلفية المحادثة حسب اختيار المستخدم: لون أو تدرج أو صورة من المعرض. */
 @Composable
 fun ChatBackground(prefs: AppPrefs, modifier: Modifier = Modifier, content: @Composable BoxScope.() -> Unit) {
     val ctx = LocalContext.current
