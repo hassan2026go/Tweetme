@@ -4,7 +4,6 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 }
 
-// يُفعَّل ربط Firebase تلقائياً عند وجود الملف app/google-services.json، وبدونه يعمل التطبيق بالوضع التجريبي
 if (file("google-services.json").exists()) {
     apply(plugin = "com.google.gms.google-services")
 }
