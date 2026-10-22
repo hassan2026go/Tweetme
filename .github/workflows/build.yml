@@ -41,7 +41,17 @@ jobs:
           gradle-version: "8.9"
 
       - name: Build debug APK
-        run: gradle assembleDebug --stacktrace
+        run: gradle assembleDebug --console=plain > build.log 2>&1 || echo "BUILD_FAILED=1" >> "$GITHUB_ENV"
+
+      # يطبع الأخطاء وحدها (صوّر هذه الخطوة إن فشل البناء)
+      - name: Show errors
+        if: env.BUILD_FAILED == '1'
+        run: |
+          echo "=========== ERRORS ==========="
+          grep -nE "^e: |^w: .*unresolved|What went wrong|Execution failed|error:|Could not|not found|Unresolved" build.log | head -40
+          echo "=========== DETAILS ==========="
+          grep -n -A12 "What went wrong" build.log | head -50
+          exit 1
 
       - name: Name the APK
         run: cp app/build/outputs/apk/debug/app-debug.apk TweetMe.apk
