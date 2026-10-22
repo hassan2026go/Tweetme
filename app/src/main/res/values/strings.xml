@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- كل نصوص التطبيق هنا: عدّل الصياغة من هذا الملف فقط -->
+<resources>
+    <string name="app_name">Tweet me</string>
+
+    <!-- التبويبات -->
+    <string name="tab_chats">المحادثات</string>
+    <string name="tab_status">الحالات</string>
+    <string name="tab_calls">المكالمات</string>
+    <string name="tab_settings">الإعدادات</string>
+    <string name="soon">قريباً</string>
+    <string name="soon_hint">هذه الميزة ستُضاف في المرحلة التالية.</string>
+
+    <!-- الدخول -->
+    <string name="tab_login">دخول</string>
+    <string name="tab_signup">حساب جديد</string>
+    <string name="auth_lead_login">سجّل دخولك لمتابعة محادثاتك</string>
+    <string name="auth_lead_signup">أنشئ حسابك وابدأ المراسلة</string>
+    <string name="f_name">الاسم الظاهر</string>
+    <string name="f_username">اسم المستخدم</string>
+    <string name="f_username_hint">3 إلى 20 حرفاً إنجليزياً أو أرقاماً أو _</string>
+    <string name="f_email">البريد الإلكتروني</string>
+    <string name="f_password">كلمة المرور</string>
+    <string name="toggle_password">إظهار أو إخفاء كلمة المرور</string>
+    <string name="btn_login">دخول</string>
+    <string name="btn_create_account">إنشاء الحساب</string>
+    <string name="please_wait">جارٍ التنفيذ…</string>
+    <string name="forgot_password">نسيت كلمة المرور؟</string>
+    <string name="info_reset_sent">أُرسل رابط استعادة كلمة المرور إلى بريدك</string>
+    <string name="demo_note">الوضع التجريبي: يعمل على هاتفك فقط. أضف ملف google-services.json لتفعيل المراسلة الحقيقية.</string>
+    <string name="demo_badge">وضع تجريبي</string>
+
+    <!-- الأخطاء -->
+    <string name="err_name">اكتب اسمك (حرفان على الأقل)</string>
+    <string name="err_username_format">اسم المستخدم: 3 إلى 20 حرفاً إنجليزياً أو أرقاماً أو _</string>
+    <string name="err_email_first">اكتب بريدك الإلكتروني أولاً</string>
+    <string name="err_invalid_email">البريد الإلكتروني غير صالح</string>
+    <string name="err_email_in_use">هذا البريد مسجّل مسبقاً</string>
+    <string name="err_weak_password">كلمة المرور ضعيفة (6 أحرف على الأقل)</string>
+    <string name="err_bad_credentials">البريد أو كلمة المرور غير صحيحة</string>
+    <string name="err_network">تعذر الاتصال بالإنترنت</string>
+    <string name="err_username_taken">اسم المستخدم محجوز، اختر اسماً آخر</string>
+    <string name="err_permission">لا تملك صلاحية لهذه العملية (تحقق من قواعد Firestore)</string>
+    <string name="err_too_many">محاولات كثيرة، حاول لاحقاً</string>
+    <string name="err_too_big">الملف كبير جداً</string>
+    <string name="err_unknown">حدث خطأ، حاول مرة أخرى</string>
+    <string name="err_record">تعذر بدء التسجيل الصوتي</string>
+    <string name="mic_permission">اسمح باستخدام الميكروفون من إعدادات الهاتف</string>
+    <string name="err_bg">تعذر استخدام الصورة كخلفية</string>
+    <string name="err_hex">اكتب لوناً صحيحاً مثل #2F7BFF</string>
+
+    <!-- المحادثات -->
+    <string name="no_chats_title">لا توجد محادثات بعد</string>
+    <string name="no_chats_hint">اضغط زر + للبحث عن صديق باسم المستخدم وابدأ المراسلة.</string>
+    <string name="new_chat">محادثة جديدة</string>
+    <string name="friend_username">اسم المستخدم للصديق</string>
+    <string name="search">بحث</string>
+    <string name="close">إغلاق</string>
+    <string name="cancel">إلغاء</string>
+    <string name="user_not_found">لا يوجد عضو بهذا الاسم</string>
+    <string name="that_is_you">هذا حسابك أنت</string>
+    <string name="you_prefix">أنت: </string>
+    <string name="msg_image">📷 صورة</string>
+    <string name="msg_voice">🎤 رسالة صوتية</string>
+    <string name="back">رجوع</string>
+    <string name="type_message">اكتب رسالة</string>
+    <string name="send">إرسال</string>
+    <string name="attach_image">إرفاق صورة</string>
+    <string name="record_voice">تسجيل رسالة صوتية</string>
+    <string name="play">تشغيل</string>
+    <string name="today">اليوم</string>
+    <string name="yesterday">أمس</string>
+    <string name="am">ص</string>
+    <string name="pm">م</string>
+
+    <!-- الإعدادات -->
+    <string name="sec_account">الحساب</string>
+    <string name="save_name">حفظ الاسم</string>
+    <string name="saved">تم الحفظ</string>
+    <string name="sec_appearance">المظهر</string>
+    <string name="mode_dark">داكن</string>
+    <string name="mode_light">فاتح</string>
+    <string name="mode_auto">تلقائي</string>
+    <string name="app_color">لون التطبيق</string>
+    <string name="custom_color">لون مخصص</string>
+    <string name="apply">تطبيق</string>
+    <string name="font_size">حجم الخط</string>
+    <string name="sec_chat">المحادثة</string>
+    <string name="preview_in">مرحباً، كيف حالك؟</string>
+    <string name="preview_out">بخير، شكراً لك</string>
+    <string name="chat_background">خلفية المحادثة</string>
+    <string name="bg_default">افتراضي</string>
+    <string name="bg_from_gallery">صورة من المعرض</string>
+    <string name="bubble_color">لون فقاعة رسائلي</string>
+    <string name="sec_app">التطبيق</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="logout_confirm">تسجيل الخروج من Tweet me؟</string>
+    <string name="version_label">Tweet me · الإصدار 1.0</string>
+</resources>
